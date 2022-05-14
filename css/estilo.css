@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Fredoka+One&family=Mako&family=Orelega+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0%;
+}
+
+
+header{
+    background-color: #18adaa;
+    color: whitesmoke;
+    font-family: 'Mako', sans-serif;
+    text-align: center;
+    margin: 0%;
+    padding-top: 20px;
+}
+
+.titulo h1{
+    font-size: 400%
+}
+
+nav ul li{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navegador{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 15px;
+}
+
+
+
+
+
+
+main{
+    background-color: #f1cf7c
+}
+
+.comentarios{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    "titulo titulo titulo"
+    "comentario1 comentario2 comentario3";
+    gap: 10px;
+    font-family: 'Mako', sans-serif;
+
+}
+
+.comentarios .titulo{
+    grid-area: titulo;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.comentario1, .comentario2, .comentario3{
+    background-color: whitesmoke;
+}
+
+.comentario1{
+    grid-area: comentario1;
+    text-align: center;
+}
+
+.comentario2{
+    grid-area: comentario2;
+    text-align: center;
+}
+
+.comentario3{
+    grid-area: comentario3;
+    text-align: center;
+}
+
+
+
+
+
+
+.sobre-mi-main{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "sobreMi sobreMi sobreMi sobreMi"
+    "foto foto foto foto"
+    "edson edson edson edson";
+    font-family: 'Mako', sans-serif;
+    justify-items: center;
+    align-items: center;
+    color: black;
+}
+
+.sobreMi{
+    grid-area: sobreMi;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+
+.foto{
+    grid-area: foto;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+figure figcaption{
+    display: none;
+}
+
+.edson{
+    grid-area: edson;
+    text-align: center;
+}
+
+
+
+
+
+
+.metodologia{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "titulo titulo titulo titulo"
+    "detalle detalle detalle detalle";
+    font-family: 'Mako', sans-serif;
+    justify-items: center;
+    align-items: center;
+}
+
+.metodologia .titulo{
+    grid-area: titulo;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.detalle{
+    grid-area: detalle;
+    text-align: center;
+}
+
+
+
+
+
+.cursos-padre{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    grid-template-areas: 
+    "titulo titulo"
+    "introduccion introduccion"
+    "curso1 curso1"
+    "curso2 curso2"
+    "curso3 curso3"
+    "curso4 curso4"
+    "curso5 curso5"
+    "curso6 curso6";
+    font-family: 'Mako', sans-serif;
+    justify-items: center;
+    align-items: center;
+}
+
+.titulo-cursos{
+    grid-area: titulo;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cursos-parafo1{
+    grid-area: introduccion;
+    padding-bottom: 10px;
+}
+
+.curso-adulto{
+    grid-area: curso1;
+}
+
+.curso-empresas{
+    grid-area: curso2;
+}
+
+.curso-ninos{
+    grid-area: curso3;
+}
+
+.curso-dele{
+    grid-area: curso4;
+}
+
+.curso-ptu{
+    grid-area: curso5;
+}
+
+.curso-tesis{
+    grid-area: curso6;
+}
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: #f1cf7c;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 0;
+    font-family: 'Mako', sans-serif;
+}
+
+.rrss h4{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.botones-redessociales{
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.linkedin{
+    padding: 10px;
+}
+
+.whatsapp{
+    padding: 10px;
+}
+
+.tiktok{
+    padding: 10px;
+}
+
+.instagram{
+    padding: 10px;
+}
+
+.navegador-footer{
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 15px;
+}
+
+footer h5{
+    padding-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.agenda h3{
+    color: black;
+    padding: 30px;
+    font-family: 'Mako', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.agenda form{
+    padding-left: 30px;
+}
+
+
+
+
+@media all and (max-width: 480px){
+    .comentarios{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+        "titulo"
+        "comentario1"
+        "comentario2"
+        "comentario3";
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
