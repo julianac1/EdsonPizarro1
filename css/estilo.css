@@ -36,7 +36,13 @@ a{
     padding: 15px;
 }
 
-
+.botones-redessociales .linkedin:hover,
+.botones-redessociales .whatsapp:hover,
+.botones-redessociales .tiktok:hover,
+.botones-redessociales .instagram:hover{
+    transform: scale(2);
+    transition: all 2s;
+}
 
 
 
