@@ -13,10 +13,18 @@ header{
     text-align: center;
     margin: 0%;
     padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
 }
 
 .titulo h1{
-    font-size: 400%
+    font-size: 400%;
+    font-weight: bold;
+}
+
+.titulo h2{
+    font-weight: bold;
 }
 
 nav ul li{
@@ -51,45 +59,20 @@ main{
     background-color: #f1cf7c
 }
 
-.comentarios{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-    "titulo titulo titulo"
-    "comentario1 comentario2 comentario3";
-    gap: 10px;
-    font-family: 'Mako', sans-serif;
-
-}
-
 .comentarios .titulo{
-    grid-area: titulo;
-    font-size: 30px;
-    text-align: center;
+    font-size: 30px !important;
+    text-align: center !important;
     padding-top: 10px;
     padding-bottom: 10px;
+    font-family: 'Mako', sans-serif !important;
+    color: black !important;
+    font-weight: bold;
 }
 
-.comentario1, .comentario2, .comentario3{
-    background-color: whitesmoke;
+.carousel-inner img{
+    max-width: 50%;
+    margin: auto;
 }
-
-.comentario1{
-    grid-area: comentario1;
-    text-align: center;
-}
-
-.comentario2{
-    grid-area: comentario2;
-    text-align: center;
-}
-
-.comentario3{
-    grid-area: comentario3;
-    text-align: center;
-}
-
 
 
 
@@ -233,12 +216,28 @@ footer{
     text-align: center;
     padding-top: 20px;
     margin-bottom: 0;
-    font-family: 'Mako', sans-serif;
+    font-family: 'Mako', sans-serif !important;
+}
+
+.contacto .contactarEn{
+    font-weight: bold !important;
+    font-family: 'Mako', sans-serif !important;
+    font-size: 18px !important;
+    padding-bottom: 0%;
+    
+}
+
+.address{
+    font-family: 'Mako', sans-serif !important;
+    font-style: italic !important;
+    font-size: 18px !important;
 }
 
 .rrss h4{
     padding-top: 20px;
     padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 18px !important;
 }
 
 .botones-redessociales{
@@ -276,6 +275,8 @@ footer{
 
 footer h5{
     padding-top: 20px;
+    font-weight: bold;
+    font-size: 10px;
 }
 
 

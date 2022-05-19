@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/estilo.css">
     <title>Edson Pizarro - Profesor de Español</title>
 </head>
@@ -55,18 +56,27 @@
                 
                 <h3 class="titulo">Comentarios de mis alumnos</h3>
 
-            <p class="comentario1">
-                Las clases con Edson me ayudaron mucho en Chile. Él es un profesional muy didáctico y sus clases son entretenidas. Lo recomiendo! - Patricia Morales
-            </p>
-            
-            <p class="comentario2">
-                Las clases de Edson son muy dinámicas y los materiales son originales y divertidos. Edson tiene mucho conocimiento. No enfoca las clases solamente en gramática, te enseña mucho sobre la cultura chilena. Como extranjera eso me ayudó mucho en adaptarme. Gracias por todo Edson, mucho éxito! - Juliana Carvalho
-            </p>
-
-            <p class="comentario3">
-                És un profesor empático, paciente y mucho perspicaz. Extremadamente criativo pero muy enfocado en sus objetivos académicos para con sus alumnos, priorizando la enseñanza sin perder de vista el alumno como individuo. Tengo mucha gratitud por mis tiempos como su alumna y honor en conocer a un profesor y persona tan completa. - 
-                Izabela Rodrigues
-            </p>
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./img/comentario 1 v.3.jpg" class="d-block w-100" alt="Comentario alumno 1">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/comentario 2 v.3.jpg" class="d-block w-100" alt="Comentario alumno 2">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/comentario 3 v.3.jpg" class="d-block w-100" alt="Comentario alumno 3">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
 
             </section>
 
@@ -76,9 +86,9 @@
         <footer>
 
             <section class="contacto">
-                <h4>Me puedes contactar en:</h4>
+                <h4 class="contactarEn">Me puedes contactar en:</h4>
 
-            <address>Edson Pizarro
+            <address class="address">Edson Pizarro
                 <br>
                 edson.k2@gmail.com
                 <br>
@@ -144,6 +154,8 @@
 
 
         </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 
 </body>

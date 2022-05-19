@@ -55,50 +55,11 @@
 
         <form action="">
 
-            <label for="nombre">
-                <span>Nombre completo</span>
-                <input type="text" id="nombre" autocomplete="name" placeholder="Escribe tu nombre" required> 
-            </label>
-            <br> 
-            <label for="edad">
-                <span>Fecha de nacimiento</span>
-                <input type="datetime-local" id="edad" placeholder="Edad">
-            </label>
-            <br>
-            <label for="lengua materna">
-                <span>Lengua materna</span>
-                <input type="text" id="lengua materna" placeholder="Lengua materna" required>
-            </label>
-            <br>
-            <label for="email">
-                <span>E-mail</span>
-                <input type="email" id="email" autocomplete="email" placeholder="E-mail" required>
-            </label>
-            <br>
-            <label for="estudio">¿Has estudiado español anteriormente?</label>
-            <br>
-            <input type="radio" name="estudio" id="estudio" value="si"/>Sí
-            <input type="radio" name="estudio" id="estudio" value="no"/>No
-            <br>
-            <label for="nivel">Si es sí, ¿cuál es tu nivel:</label>
-            <br>
-            <select name="nivel" id="">
-                <option value="nivel basico">Nivel basico</option>
-                <option value="nivel intermadiario">Nivel intermediario</option>
-                <option value="nivel avanzado">nivel avanzado</option>
-            </select>
-            <br>
-            <label for="motivo">¿Que te motiva a estudiar español?</label>
-            <br>
-            <input type="text" name="motivo" id="motivo" placeholder="motivo">
-            <br>
-            <label for="calendario">
-                <span>Selecciona la fecha tentativa que deseas realizar la clase de prueba:</span>
-                <input type="datetime-local" name="calendario" id="calendario" required>
-            </label>
-            <br>
-            <input type="submit">
-            <input type="reset" value="reset">
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Nombre Completo</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre Completo">
+            </div>
+
 
         
 
