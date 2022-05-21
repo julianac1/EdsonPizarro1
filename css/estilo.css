@@ -62,8 +62,8 @@ main{
 .comentarios .titulo{
     font-size: 30px !important;
     text-align: center !important;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     font-family: 'Mako', sans-serif !important;
     color: black !important;
     font-weight: bold;
@@ -94,15 +94,18 @@ main{
 
 .sobreMi{
     grid-area: sobreMi;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     font-size: 30px;
+    color: black;
+    font-weight: bold;
 }
 
 .foto{
     grid-area: foto;
     justify-content: center;
     margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 figure figcaption{
@@ -112,6 +115,7 @@ figure figcaption{
 .edson{
     grid-area: edson;
     text-align: center;
+    padding: 10px 30px 10px 30px;
 }
 
 
@@ -134,14 +138,16 @@ figure figcaption{
 .metodologia .titulo{
     grid-area: titulo;
     font-size: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: black;
+    font-weight: bold;
 }
 
 .detalle{
     grid-area: detalle;
     text-align: center;
+    padding: 10px 30px 10px 30px;
 }
 
 
@@ -162,20 +168,24 @@ figure figcaption{
     "curso5 curso5"
     "curso6 curso6";
     font-family: 'Mako', sans-serif;
-    justify-items: center;
-    align-items: center;
 }
 
 .titulo-cursos{
     grid-area: titulo;
     font-size: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: black;
+    font-weight: bold;
+    font-family: 'Mako', sans-serif;
+    text-align: center;
 }
 
 .cursos-parafo1{
     grid-area: introduccion;
     padding-bottom: 10px;
+    text-align: center;
+    padding: 10px 30px 10px 30px;
 }
 
 .curso-adulto{
@@ -205,7 +215,91 @@ figure figcaption{
 
 
 
+.agenda h3{
+    color: black;
+    padding: 30px;
+    font-family: 'Mako', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
 
+.formulario{
+    font-family: 'Mako', sans-serif;
+    color: black;
+}
+
+.mb-3{
+    font-family: 'Mako', sans-serif;
+    color: black;
+    width: 50%;
+    padding-left: 30px;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    width: 100%;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: 20px;
+}
+
+.lenguaMaterna{
+    font-family: 'Mako', sans-serif;
+    color: black;
+    width: 50%;
+    padding-left: 30px;
+}
+
+.otra-lengua{
+    font-family: 'Mako', sans-serif;
+    color: black !important;
+    width: 50%;
+    padding-left: 30px;
+}
+
+.form-floating>.form-control, .form-floating>.form-select {
+    width: 50%;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.form-floating>label{
+    padding-left: 30px;
+    margin-left: 30px;
+}
+
+label {
+    display: inline-block;
+    padding-left: 30px;
+}
+
+.form-check {
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 1.5em;
+    margin-bottom: .125rem;
+    margin-left: 30px;
+}
+
+.nivelEspanol .form-select{
+    width: 50%;
+    padding-left: 30px;
+    margin-left: 30px;
+}
+
+.motivoEstudio .form-control{
+    width: 50%;
+    padding-left: 30px;
+    margin-left: 30px;
+}
+
+.submit-reset-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+}
 
 
 
@@ -214,7 +308,7 @@ figure figcaption{
 footer{
     background-color: #f1cf7c;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 60px;
     margin-bottom: 0;
     font-family: 'Mako', sans-serif !important;
 }
@@ -234,7 +328,7 @@ footer{
 }
 
 .rrss h4{
-    padding-top: 20px;
+    padding-top: 40px;
     padding-bottom: 10px;
     font-weight: bold;
     font-size: 18px !important;
@@ -270,39 +364,16 @@ footer{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding: 15px;
+    padding: 10px;
 }
 
 footer h5{
     padding-top: 20px;
     font-weight: bold;
-    font-size: 10px;
+    font-size: 20px;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-.agenda h3{
-    color: black;
-    padding: 30px;
-    font-family: 'Mako', sans-serif;
-    font-size: 30px;
-    text-align: center;
-}
-
-.agenda form{
-    padding-left: 30px;
-}
 
 
 
