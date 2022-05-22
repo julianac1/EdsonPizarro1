@@ -44,13 +44,7 @@ a{
     padding: 15px;
 }
 
-.botones-redessociales .linkedin:hover,
-.botones-redessociales .whatsapp:hover,
-.botones-redessociales .tiktok:hover,
-.botones-redessociales .instagram:hover{
-    transform: scale(2);
-    transition: all 2s;
-}
+
 
 
 
@@ -157,16 +151,11 @@ figure figcaption{
 .cursos-padre{
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto;
     grid-template-areas: 
     "titulo titulo"
     "introduccion introduccion"
-    "curso1 curso1"
-    "curso2 curso2"
-    "curso3 curso3"
-    "curso4 curso4"
-    "curso5 curso5"
-    "curso6 curso6";
+    "lista-cursos lista-cursos";
     font-family: 'Mako', sans-serif;
 }
 
@@ -188,29 +177,23 @@ figure figcaption{
     padding: 10px 30px 10px 30px;
 }
 
-.curso-adulto{
-    grid-area: curso1;
+.lista-curso{
+    grid-area: lista-cursos;
+    font-family: 'Mako', sans-serif;
 }
 
-.curso-empresas{
-    grid-area: curso2;
+.accordion{
+    text-align: start;
+
 }
 
-.curso-ninos{
-    grid-area: curso3;
+.accordion-item {
+    background-color: whitesmoke ;
+    border: 1px solid rgba(0,0,0,.125);
+    width: 60%;
+
 }
 
-.curso-dele{
-    grid-area: curso4;
-}
-
-.curso-ptu{
-    grid-area: curso5;
-}
-
-.curso-tesis{
-    grid-area: curso6;
-}
 
 
 
@@ -301,6 +284,22 @@ label {
     padding-bottom: 30px;
 }
 
+.submit-reset-button .submit{
+    transition: all 2s;
+}
+
+.submit-reset-button .submit:hover{
+    transform: scale(1.5);
+}
+
+.submit-reset-button .reset{
+    transition: all 2s;
+}
+
+.submit-reset-button .reset:hover{
+    transform: scale(1.5);
+}
+
 
 
 
@@ -373,22 +372,40 @@ footer h5{
     font-size: 20px;
 }
 
+.botones-redessociales .linkedin,
+.botones-redessociales .whatsapp,
+.botones-redessociales .tiktok,
+.botones-redessociales .instagram{
+    transition: all 2s;
+}
+
+.botones-redessociales .linkedin:hover,
+.botones-redessociales .whatsapp:hover,
+.botones-redessociales .tiktok:hover,
+.botones-redessociales .instagram:hover{
+    transform: scale(1.5);
+}
 
 
 
 
 
-@media all and (max-width: 480px){
-    .comentarios{
-        grid-template-columns: auto;
-        grid-template-rows: auto auto;
-        grid-template-areas:
-        "titulo"
-        "comentario1"
-        "comentario2"
-        "comentario3";
+
+@media (max-width:576px){
+    .botones-redessociales{
+        transform: none;
+        transition: none;
     }
 
+}
+
+@media (min-width: 992px){
+    a:visited{
+        color: purple;
+    }
+    a:active{
+        background-color: #18adaa;
+    }
 
 }
 
