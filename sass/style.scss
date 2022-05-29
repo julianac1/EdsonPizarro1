@@ -1,3 +1,4 @@
+@import "generales";
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Fredoka+One&family=Mako&family=Orelega+One&display=swap');
 
 *{
@@ -7,59 +8,66 @@
 
 
 header{
-    background-color: #18adaa;
-    color: whitesmoke;
-    font-family: 'Mako', sans-serif;
+    background-color: $header_color;
+    font-family: $fuente;
     text-align: center;
     margin: 0%;
     padding-top: 20px;
     display: flex;
     flex-direction: column;
     font-weight: bold;
+
+    .titulo h1{
+        font-size: 80px;
+        font-weight: bold;
+        color: $titulo_color;
+    }
+
+    h2{
+        font-weight: bold;
+        color: $titulo_color;
+        font-size: 25px;
+    }
+
 }
 
-.titulo h1{
-    font-size: 400%;
-    font-weight: bold;
-}
 
-.titulo h2{
-    font-weight: bold;
-}
 
-nav ul li{
-    list-style-type: none;
-    text-decoration: none;
-}
 
-a{
-    text-decoration: none;
-    padding: 10px;
-}
 
 .navegador{
     display: flex;
     justify-content: center;
     align-items: flex-start;
     padding: 15px;
-}
 
+    li{
+        list-style-type: none;
+        text-decoration: none;
+    }
+
+    a{
+        text-decoration: none;
+        padding: 10px;
+    }
+
+}
 
 
 
 
 
 main{
-    background-color: #f1cf7c
+    background-color: $color_main;
 }
 
 .comentarios .titulo{
-    font-size: 30px !important;
+    font-size: $tamano_titulo_seccion;
     text-align: center !important;
     padding-top: 30px;
     padding-bottom: 30px;
-    font-family: 'Mako', sans-serif !important;
-    color: black !important;
+    font-family: $fuente;
+    color: $color_titulo_seccion;
     font-weight: bold;
 }
 
@@ -80,18 +88,17 @@ main{
     "sobreMi sobreMi sobreMi sobreMi"
     "foto foto foto foto"
     "edson edson edson edson";
-    font-family: 'Mako', sans-serif;
+    font-family: $fuente;
     justify-items: center;
     align-items: center;
-    color: black;
 }
 
 .sobreMi{
     grid-area: sobreMi;
     padding-top: 30px;
     padding-bottom: 30px;
-    font-size: 30px;
-    color: black;
+    font-size: $tamano_titulo_seccion;
+    color: $color_titulo_seccion;
     font-weight: bold;
 }
 
@@ -100,16 +107,19 @@ main{
     justify-content: center;
     margin-bottom: 30px;
     margin-top: 30px;
+
+    figure figcaption{
+        display: none;
+    }
 }
 
-figure figcaption{
-    display: none;
-}
+
 
 .edson{
     grid-area: edson;
     text-align: center;
     padding: 10px 30px 10px 30px;
+    color: $color_titulo_seccion;
 }
 
 
@@ -124,17 +134,17 @@ figure figcaption{
     grid-template-areas: 
     "titulo titulo titulo titulo"
     "detalle detalle detalle detalle";
-    font-family: 'Mako', sans-serif;
+    font-family: $fuente;
     justify-items: center;
     align-items: center;
 }
 
 .metodologia .titulo{
     grid-area: titulo;
-    font-size: 30px;
+    font-size: $tamano_titulo_seccion;
     padding-top: 30px;
     padding-bottom: 30px;
-    color: black;
+    color: $color_titulo_seccion;
     font-weight: bold;
 }
 
@@ -156,17 +166,17 @@ figure figcaption{
     "titulo titulo"
     "introduccion introduccion"
     "lista-cursos lista-cursos";
-    font-family: 'Mako', sans-serif;
+    font-family: $fuente;
 }
 
 .titulo-cursos{
     grid-area: titulo;
-    font-size: 30px;
+    font-size: $tamano_titulo_seccion;
     padding-top: 30px;
     padding-bottom: 30px;
-    color: black;
+    color: $color_titulo_seccion;
     font-weight: bold;
-    font-family: 'Mako', sans-serif;
+    font-family: $fuente;
     text-align: center;
 }
 
@@ -179,45 +189,50 @@ figure figcaption{
 
 .lista-curso{
     grid-area: lista-cursos;
-    font-family: 'Mako', sans-serif;
+    font-family: $fuente;
 }
 
 .accordion{
     text-align: start;
 
+    .accordion-item {
+        background-color: whitesmoke ;
+        border: 1px solid rgba(0,0,0,.125);
+        width: 60%;
+        margin: auto;
+    
+    }
+
 }
 
-.accordion-item {
-    background-color: whitesmoke ;
-    border: 1px solid rgba(0,0,0,.125);
-    width: 60%;
 
-}
 
 
 
 
 
 .agenda h3{
-    color: black;
+    color: $color_titulo_seccion;
     padding: 30px;
-    font-family: 'Mako', sans-serif;
-    font-size: 30px;
+    font-family: $fuente;
+    font-size: $tamano_titulo_seccion;
     text-align: center;
     font-weight: bold;
 }
 
 .formulario{
-    font-family: 'Mako', sans-serif;
+    font-family: $fuente;
     color: black;
+
+    .mb-3{
+        font-family: $fuente;
+        color: black;
+        width: 50%;
+        padding-left: 30px;
+    }
 }
 
-.mb-3{
-    font-family: 'Mako', sans-serif;
-    color: black;
-    width: 50%;
-    padding-left: 30px;
-}
+
 
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
     width: 100%;
@@ -228,14 +243,14 @@ figure figcaption{
 }
 
 .lenguaMaterna{
-    font-family: 'Mako', sans-serif;
+    font-family: $fuente;
     color: black;
     width: 50%;
     padding-left: 30px;
 }
 
 .otra-lengua{
-    font-family: 'Mako', sans-serif;
+    font-family: $fuente;
     color: black !important;
     width: 50%;
     padding-left: 30px;
@@ -309,67 +324,58 @@ footer{
     text-align: center;
     padding-top: 60px;
     margin-bottom: 0;
-    font-family: 'Mako', sans-serif !important;
-}
+    font-family: $fuente;
 
-.contacto .contactarEn{
-    font-weight: bold !important;
-    font-family: 'Mako', sans-serif !important;
-    font-size: 18px !important;
-    padding-bottom: 0%;
+    .contactarEn{
+        font-weight: bold !important;
+        font-family: $fuente;
+        font-size: 18px !important;
+        padding-bottom: 0%;
+        
+    }
+
+    .address{
+        font-family: $fuente;
+        font-style: italic !important;
+        font-size: 18px !important;
+    }
+
+    h4{
+        padding-top: 40px;
+        padding-bottom: 10px;
+        font-weight: bold;
+        font-size: 18px !important;
+    }
+
+    .botones-redessociales{
+        list-style-type: none;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .linkedin{
+        padding: 10px;
+    }
+
+    .whatsapp{
+        padding: 10px;
+    }
+
+    .tiktok{
+        padding: 10px;
+    }
     
-}
+    .instagram{
+        padding: 10px;
+    }
 
-.address{
-    font-family: 'Mako', sans-serif !important;
-    font-style: italic !important;
-    font-size: 18px !important;
-}
-
-.rrss h4{
-    padding-top: 40px;
-    padding-bottom: 10px;
-    font-weight: bold;
-    font-size: 18px !important;
-}
-
-.botones-redessociales{
-    list-style-type: none;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-}
-
-.linkedin{
-    padding: 10px;
-}
-
-.whatsapp{
-    padding: 10px;
-}
-
-.tiktok{
-    padding: 10px;
-}
-
-.instagram{
-    padding: 10px;
-}
-
-.navegador-footer{
-    list-style-type: none;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 10px;
-}
-
-footer h5{
-    padding-top: 20px;
-    font-weight: bold;
-    font-size: 20px;
+    h5{
+        padding-top: 20px;
+        font-weight: bold;
+        font-size: 15px;
+    }
 }
 
 .botones-redessociales .linkedin,
@@ -377,16 +383,30 @@ footer h5{
 .botones-redessociales .tiktok,
 .botones-redessociales .instagram{
     transition: all 2s;
-}
 
-.botones-redessociales .linkedin:hover,
-.botones-redessociales .whatsapp:hover,
-.botones-redessociales .tiktok:hover,
-.botones-redessociales .instagram:hover{
-    transform: scale(1.5);
+    &:hover{
+        transform: scale(1.5);
+    }
 }
 
 
+.navegador-footer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+
+    li{
+        list-style-type: none;
+        text-decoration: none;
+    }
+
+    a{
+        text-decoration: none;
+        padding: 10px;
+    }
+
+}
 
 
 
@@ -408,13 +428,3 @@ footer h5{
     }
 
 }
-
-
-
-
-
-
-
-
-
-

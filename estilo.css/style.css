@@ -1,0 +1,451 @@
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Fredoka+One&family=Mako&family=Orelega+One&display=swap");
+* {
+  padding: 0;
+  margin: 0%;
+}
+
+header {
+  background-color: #18adaa;
+  font-family: "Mako", sans-serif;
+  text-align: center;
+  margin: 0%;
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: bold;
+}
+
+header .titulo h1 {
+  font-size: 80px;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+header h2 {
+  font-weight: bold;
+  color: whitesmoke;
+  font-size: 25px;
+}
+
+.navegador {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 15px;
+}
+
+.navegador li {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.navegador a {
+  text-decoration: none;
+  padding: 10px;
+}
+
+main {
+  background-color: #f1cf7c;
+}
+
+.comentarios .titulo {
+  font-size: 30px;
+  text-align: center !important;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-family: "Mako", sans-serif;
+  color: black;
+  font-weight: bold;
+}
+
+.carousel-inner img {
+  max-width: 50%;
+  margin: auto;
+}
+
+.sobre-mi-main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
+      grid-template-areas: "sobreMi sobreMi sobreMi sobreMi" "foto foto foto foto" "edson edson edson edson";
+  font-family: "Mako", sans-serif;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sobreMi {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: sobreMi;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+}
+
+.foto {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: foto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.foto figure figcaption {
+  display: none;
+}
+
+.edson {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: edson;
+  text-align: center;
+  padding: 10px 30px 10px 30px;
+  color: black;
+}
+
+.metodologia {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+      grid-template-areas: "titulo titulo titulo titulo" "detalle detalle detalle detalle";
+  font-family: "Mako", sans-serif;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.metodologia .titulo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: titulo;
+  font-size: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: black;
+  font-weight: bold;
+}
+
+.detalle {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: detalle;
+  text-align: center;
+  padding: 10px 30px 10px 30px;
+}
+
+.cursos-padre {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
+      grid-template-areas: "titulo titulo" "introduccion introduccion" "lista-cursos lista-cursos";
+  font-family: "Mako", sans-serif;
+}
+
+.titulo-cursos {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: titulo;
+  font-size: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: black;
+  font-weight: bold;
+  font-family: "Mako", sans-serif;
+  text-align: center;
+}
+
+.cursos-parafo1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: introduccion;
+  padding-bottom: 10px;
+  text-align: center;
+  padding: 10px 30px 10px 30px;
+}
+
+.lista-curso {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: lista-cursos;
+  font-family: "Mako", sans-serif;
+}
+
+.accordion {
+  text-align: start;
+}
+
+.accordion .accordion-item {
+  background-color: whitesmoke;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  width: 60%;
+  margin: auto;
+}
+
+.agenda h3 {
+  color: black;
+  padding: 30px;
+  font-family: "Mako", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.formulario {
+  font-family: "Mako", sans-serif;
+  color: black;
+}
+
+.formulario .mb-3 {
+  font-family: "Mako", sans-serif;
+  color: black;
+  width: 50%;
+  padding-left: 30px;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: 20px;
+}
+
+.lenguaMaterna {
+  font-family: "Mako", sans-serif;
+  color: black;
+  width: 50%;
+  padding-left: 30px;
+}
+
+.otra-lengua {
+  font-family: "Mako", sans-serif;
+  color: black !important;
+  width: 50%;
+  padding-left: 30px;
+}
+
+.form-floating > .form-control, .form-floating > .form-select {
+  width: 50%;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+.form-floating > label {
+  padding-left: 30px;
+  margin-left: 30px;
+}
+
+label {
+  display: inline-block;
+  padding-left: 30px;
+}
+
+.form-check {
+  display: block;
+  min-height: 1.5rem;
+  padding-left: 1.5em;
+  margin-bottom: .125rem;
+  margin-left: 30px;
+}
+
+.nivelEspanol .form-select {
+  width: 50%;
+  padding-left: 30px;
+  margin-left: 30px;
+}
+
+.motivoEstudio .form-control {
+  width: 50%;
+  padding-left: 30px;
+  margin-left: 30px;
+}
+
+.submit-reset-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-bottom: 30px;
+}
+
+.submit-reset-button .submit {
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.submit-reset-button .submit:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.submit-reset-button .reset {
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.submit-reset-button .reset:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+footer {
+  background-color: #f1cf7c;
+  text-align: center;
+  padding-top: 60px;
+  margin-bottom: 0;
+  font-family: "Mako", sans-serif;
+}
+
+footer .contactarEn {
+  font-weight: bold !important;
+  font-family: "Mako", sans-serif;
+  font-size: 18px !important;
+  padding-bottom: 0%;
+}
+
+footer .address {
+  font-family: "Mako", sans-serif;
+  font-style: italic !important;
+  font-size: 18px !important;
+}
+
+footer h4 {
+  padding-top: 40px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-size: 18px !important;
+}
+
+footer .botones-redessociales {
+  list-style-type: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+}
+
+footer .linkedin {
+  padding: 10px;
+}
+
+footer .whatsapp {
+  padding: 10px;
+}
+
+footer .tiktok {
+  padding: 10px;
+}
+
+footer .instagram {
+  padding: 10px;
+}
+
+footer h5 {
+  padding-top: 20px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.botones-redessociales .linkedin,
+.botones-redessociales .whatsapp,
+.botones-redessociales .tiktok,
+.botones-redessociales .instagram {
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.botones-redessociales .linkedin:hover,
+.botones-redessociales .whatsapp:hover,
+.botones-redessociales .tiktok:hover,
+.botones-redessociales .instagram:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.navegador-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 10px;
+}
+
+.navegador-footer li {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.navegador-footer a {
+  text-decoration: none;
+  padding: 10px;
+}
+
+@media (max-width: 576px) {
+  .botones-redessociales {
+    -webkit-transform: none;
+            transform: none;
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (min-width: 992px) {
+  a:visited {
+    color: purple;
+  }
+  a:active {
+    background-color: #18adaa;
+  }
+}
+/*# sourceMappingURL=style.css.map */
