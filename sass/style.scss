@@ -34,7 +34,7 @@ header{
 
 
 
-
+/*nesting*/
 .navegador{
     display: flex;
     justify-content: center;
@@ -102,6 +102,7 @@ main{
     font-weight: bold;
 }
 
+/*nesting*/
 .foto{
     grid-area: foto;
     justify-content: center;
@@ -155,6 +156,20 @@ main{
 }
 
 
+/*maps*/
+$botones:(
+    prueba1: #55acee,
+    prueba2: #3a5795,
+    prueba3: #C25e30,
+);
+
+@each $prueba, $color in $botones {
+    .btn--#{$prueba}{
+        background-color: $color;
+    }
+};
+
+
 
 
 
@@ -192,6 +207,7 @@ main{
     font-family: $fuente;
 }
 
+/*nesting*/
 .accordion{
     text-align: start;
 
@@ -220,6 +236,7 @@ main{
     font-weight: bold;
 }
 
+/*nesting*/
 .formulario{
     font-family: $fuente;
     color: black;
@@ -242,18 +259,27 @@ main{
     margin-left: 20px;
 }
 
-.lenguaMaterna{
+.estiloLengua{
     font-family: $fuente;
     color: black;
     width: 50%;
     padding-left: 30px;
 }
 
+/*extend*/
+.lenguaMaterna{
+    @extend .estiloLengua;
+}
+
 .otra-lengua{
-    font-family: $fuente;
-    color: black !important;
-    width: 50%;
-    padding-left: 30px;
+    @extend .estiloLengua;
+}
+
+
+/*mixing*/
+@mixin size ($paddingL, $marginL){
+    padding-left: $paddingL;
+    margin-left: $marginL;
 }
 
 .form-floating>.form-control, .form-floating>.form-select {
@@ -262,9 +288,9 @@ main{
     margin-bottom: 10px;
 }
 
+/*mixing*/
 .form-floating>label{
-    padding-left: 30px;
-    margin-left: 30px;
+    @include size (30px, 30px);
 }
 
 label {
@@ -280,16 +306,17 @@ label {
     margin-left: 30px;
 }
 
+/*mixing*/
 .nivelEspanol .form-select{
     width: 50%;
-    padding-left: 30px;
-    margin-left: 30px;
+    @include size (30px, 30px);
 }
 
+/*mixing*/
 .motivoEstudio .form-control{
     width: 50%;
-    padding-left: 30px;
-    margin-left: 30px;
+    @include size (30px, 30px);
+
 }
 
 .submit-reset-button{
@@ -299,26 +326,21 @@ label {
     padding-bottom: 30px;
 }
 
-.submit-reset-button .submit{
-    transition: all 2s;
-}
-
-.submit-reset-button .submit:hover{
-    transform: scale(1.5);
-}
-
+/*nesting*/
+.submit-reset-button .submit,
 .submit-reset-button .reset{
     transition: all 2s;
+
+    &:hover{
+        transform: scale(1.5);
+    }
 }
 
-.submit-reset-button .reset:hover{
-    transform: scale(1.5);
-}
 
 
 
 
-
+/*nesting*/
 footer{
     background-color: #f1cf7c;
     text-align: center;
@@ -378,6 +400,7 @@ footer{
     }
 }
 
+
 .botones-redessociales .linkedin,
 .botones-redessociales .whatsapp,
 .botones-redessociales .tiktok,
@@ -389,7 +412,7 @@ footer{
     }
 }
 
-
+/*nesting*/
 .navegador-footer{
     display: flex;
     justify-content: center;
@@ -410,7 +433,7 @@ footer{
 
 
 
-
+/*media querie*/
 @media (max-width:576px){
     .botones-redessociales{
         transform: none;

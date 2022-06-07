@@ -32,6 +32,7 @@ header h2 {
   font-size: 25px;
 }
 
+/*nesting*/
 .navegador {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -101,6 +102,7 @@ main {
   font-weight: bold;
 }
 
+/*nesting*/
 .foto {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -163,6 +165,19 @@ main {
   padding: 10px 30px 10px 30px;
 }
 
+/*maps*/
+.btn--prueba1 {
+  background-color: #55acee;
+}
+
+.btn--prueba2 {
+  background-color: #3a5795;
+}
+
+.btn--prueba3 {
+  background-color: #C25e30;
+}
+
 .cursos-padre {
   display: -ms-grid;
   display: grid;
@@ -206,6 +221,7 @@ main {
   font-family: "Mako", sans-serif;
 }
 
+/*nesting*/
 .accordion {
   text-align: start;
 }
@@ -226,6 +242,7 @@ main {
   font-weight: bold;
 }
 
+/*nesting*/
 .formulario {
   font-family: "Mako", sans-serif;
   color: black;
@@ -246,26 +263,22 @@ main {
   margin-left: 20px;
 }
 
-.lenguaMaterna {
+.estiloLengua, .lenguaMaterna, .otra-lengua {
   font-family: "Mako", sans-serif;
   color: black;
   width: 50%;
   padding-left: 30px;
 }
 
-.otra-lengua {
-  font-family: "Mako", sans-serif;
-  color: black !important;
-  width: 50%;
-  padding-left: 30px;
-}
-
+/*extend*/
+/*mixing*/
 .form-floating > .form-control, .form-floating > .form-select {
   width: 50%;
   margin-left: 30px;
   margin-bottom: 10px;
 }
 
+/*mixing*/
 .form-floating > label {
   padding-left: 30px;
   margin-left: 30px;
@@ -284,12 +297,14 @@ label {
   margin-left: 30px;
 }
 
+/*mixing*/
 .nivelEspanol .form-select {
   width: 50%;
   padding-left: 30px;
   margin-left: 30px;
 }
 
+/*mixing*/
 .motivoEstudio .form-control {
   width: 50%;
   padding-left: 30px;
@@ -310,26 +325,20 @@ label {
   padding-bottom: 30px;
 }
 
-.submit-reset-button .submit {
-  -webkit-transition: all 2s;
-  transition: all 2s;
-}
-
-.submit-reset-button .submit:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
-}
-
+/*nesting*/
+.submit-reset-button .submit,
 .submit-reset-button .reset {
   -webkit-transition: all 2s;
   transition: all 2s;
 }
 
+.submit-reset-button .submit:hover,
 .submit-reset-button .reset:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
 }
 
+/*nesting*/
 footer {
   background-color: #f1cf7c;
   text-align: center;
@@ -408,6 +417,7 @@ footer h5 {
           transform: scale(1.5);
 }
 
+/*nesting*/
 .navegador-footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -431,6 +441,7 @@ footer h5 {
   padding: 10px;
 }
 
+/*media querie*/
 @media (max-width: 576px) {
   .botones-redessociales {
     -webkit-transform: none;
