@@ -156,18 +156,6 @@ main{
 }
 
 
-/*maps*/
-$botones:(
-    prueba1: #55acee,
-    prueba2: #3a5795,
-    prueba3: #C25e30,
-);
-
-@each $prueba, $color in $botones {
-    .btn--#{$prueba}{
-        background-color: $color;
-    }
-};
 
 
 
