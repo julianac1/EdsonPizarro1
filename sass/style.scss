@@ -396,7 +396,7 @@ footer{
     transition: all 2s;
 
     &:hover{
-        transform: scale(1.5);
+        transform: scale(1.2);
     }
 }
 
@@ -424,11 +424,32 @@ footer{
 /*media querie*/
 @media (max-width:576px){
     .botones-redessociales{
-        transform: none;
-        transition: none;
+    transition: none;
+
+    &:hover{
+        transform: scale(0);
     }
+}
+
+.botones-redessociales:hover{
+    
+}
+
+.submit-reset-button .submit,
+.submit-reset-button .reset{
+    transition: none;
+}
+
+.submit-reset-button .submit:hover{
+    transform: scale(0);
+}
+
+.submit-reset-button .reset:hover{
+    transform: scale(0)
+}
 
 }
+
 
 @media (min-width: 992px){
     a:visited{

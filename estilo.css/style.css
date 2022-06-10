@@ -400,8 +400,8 @@ footer h5 {
 .botones-redessociales .whatsapp:hover,
 .botones-redessociales .tiktok:hover,
 .botones-redessociales .instagram:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 /*nesting*/
@@ -431,10 +431,25 @@ footer h5 {
 /*media querie*/
 @media (max-width: 576px) {
   .botones-redessociales {
-    -webkit-transform: none;
-            transform: none;
     -webkit-transition: none;
     transition: none;
+  }
+  .botones-redessociales:hover {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  .submit-reset-button .submit,
+  .submit-reset-button .reset {
+    -webkit-transition: none;
+    transition: none;
+  }
+  .submit-reset-button .submit:hover {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  .submit-reset-button .reset:hover {
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
 }
 
