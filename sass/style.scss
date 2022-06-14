@@ -126,24 +126,30 @@ main{
 .edson{
     grid-area: edson;
     text-align: center;
-    padding: 10px 30px 10px 30px;
+    padding: 10px 30px 30px 30px;
     color: $color_titulo_seccion;
 }
 
 .publicaciones{
     grid-area: publicaciones;
-    justify-content: space-evenly;
     font-family: $fuente;
-}
 
-.publicaciones a{
-    grid-area: publicaciones;
+    a{
     height: 60px;
     width: 60px;
     background-color: whitesmoke;
     color: $color_titulo_seccion;
     text-decoration: none;
     padding: 10px 10px 10px 10px;
+    border: 1px solid whitesmoke;
+    border-radius: 30px;
+    
+
+    }
+}
+
+.publicaciones a{
+    
 }
 
 
@@ -476,5 +482,34 @@ footer{
     a:active{
         background-color: #18adaa;
     }
+}
 
+@media (max-width:576px) {
+    .botones-redessociales .linkedin{
+        transition: none;
+    }
+    .botones-redessociales .linkedin:hover{
+        transform: none;
+    }
+
+    .botones-redessociales .whatsapp{
+        transition: none;
+    }
+    .botones-redessociales .whatsapp:hover{
+        transform: none;
+    }
+
+    .botones-redessociales .tiktok{
+        transition: none;
+    }
+    .botones-redessociales .tiktok:hover{
+        transform: none;
+    }
+
+    .botones-redessociales .instagram{
+        transition: none
+    }
+    .botones-redessociales .instagram:hover{
+        transform: none;
+    }
 }

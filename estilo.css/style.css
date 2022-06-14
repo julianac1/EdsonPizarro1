@@ -131,7 +131,7 @@ main {
   -ms-grid-column-span: 4;
   grid-area: edson;
   text-align: center;
-  padding: 10px 30px 10px 30px;
+  padding: 10px 30px 30px 30px;
   color: black;
 }
 
@@ -140,23 +140,18 @@ main {
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-area: publicaciones;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   font-family: "Mako", sans-serif;
 }
 
 .publicaciones a {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-area: publicaciones;
   height: 60px;
   width: 60px;
   background-color: whitesmoke;
   color: black;
   text-decoration: none;
   padding: 10px 10px 10px 10px;
+  border: 1px solid whitesmoke;
+  border-radius: 30px;
 }
 
 /*seccion metodologia*/
@@ -503,6 +498,41 @@ footer h5 {
   }
   a:active {
     background-color: #18adaa;
+  }
+}
+
+@media (max-width: 576px) {
+  .botones-redessociales .linkedin {
+    -webkit-transition: none;
+    transition: none;
+  }
+  .botones-redessociales .linkedin:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+  .botones-redessociales .whatsapp {
+    -webkit-transition: none;
+    transition: none;
+  }
+  .botones-redessociales .whatsapp:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+  .botones-redessociales .tiktok {
+    -webkit-transition: none;
+    transition: none;
+  }
+  .botones-redessociales .tiktok:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+  .botones-redessociales .instagram {
+    -webkit-transition: none;
+    transition: none;
+  }
+  .botones-redessociales .instagram:hover {
+    -webkit-transform: none;
+            transform: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
