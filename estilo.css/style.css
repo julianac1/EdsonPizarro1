@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Fredoka+One&family=Mako&family=Orelega+One&display=swap");
 * {
-  padding: 0;
+  padding: 0%;
   margin: 0%;
 }
 
+/*nesting*/
 header {
   background-color: #18adaa;
   font-family: "Mako", sans-serif;
@@ -54,12 +55,15 @@ header h2 {
 .navegador a {
   text-decoration: none;
   padding: 10px;
+  color: whitesmoke;
+  font-weight: normal;
 }
 
 main {
   background-color: #f1cf7c;
 }
 
+/*seccion inicio*/
 .comentarios .titulo {
   font-size: 30px;
   text-align: center !important;
@@ -70,19 +74,21 @@ main {
   font-weight: bold;
 }
 
+/*carrosel*/
 .carousel-inner img {
   max-width: 50%;
   margin: auto;
 }
 
+/*seccion sobre mi*/
 .sobre-mi-main {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto auto auto auto;
       grid-template-columns: auto auto auto auto;
-  -ms-grid-rows: auto auto auto;
-      grid-template-rows: auto auto auto;
-      grid-template-areas: "sobreMi sobreMi sobreMi sobreMi" "foto foto foto foto" "edson edson edson edson";
+  -ms-grid-rows: auto auto auto auto;
+      grid-template-rows: auto auto auto auto;
+      grid-template-areas: "sobreMi sobreMi sobreMi sobreMi" "foto foto foto foto" "edson edson edson edson" "publicaciones publicaciones publicaciones publicaciones";
   font-family: "Mako", sans-serif;
   justify-items: center;
   -webkit-box-align: center;
@@ -129,6 +135,31 @@ main {
   color: black;
 }
 
+.publicaciones {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: publicaciones;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-family: "Mako", sans-serif;
+}
+
+.publicaciones a {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: publicaciones;
+  height: 60px;
+  width: 60px;
+  background-color: whitesmoke;
+  color: black;
+  text-decoration: none;
+  padding: 10px 10px 10px 10px;
+}
+
+/*seccion metodologia*/
 .metodologia {
   display: -ms-grid;
   display: grid;
@@ -165,6 +196,7 @@ main {
   padding: 10px 30px 10px 30px;
 }
 
+/*seccion cursos*/
 .cursos-padre {
   display: -ms-grid;
   display: grid;
@@ -220,7 +252,22 @@ main {
   margin: auto;
 }
 
+/*seccion agenda*/
+.agenda {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
+      grid-template-areas: "titulo titulo" "invitacion invitacion" "formulario formulario";
+}
+
 .agenda h3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: titulo;
   color: black;
   padding: 30px;
   font-family: "Mako", sans-serif;
@@ -229,8 +276,28 @@ main {
   font-weight: bold;
 }
 
+.invitacion-claseprueba {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: invitacion;
+  color: black;
+  font-family: "Mako", sans-serif;
+  text-align: center;
+  padding: 10px 30px 30px 30px;
+}
+
+.invitacion-claseprueba p {
+  margin: auto;
+}
+
 /*nesting*/
+/*formulario para agendar clase de prueba*/
 .formulario {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: formulario;
   font-family: "Mako", sans-serif;
   color: black;
 }
@@ -325,6 +392,7 @@ label {
           transform: scale(1.5);
 }
 
+/*seccion footer*/
 /*nesting*/
 footer {
   background-color: #f1cf7c;
@@ -429,30 +497,6 @@ footer h5 {
 }
 
 /*media querie*/
-@media (max-width: 576px) {
-  .botones-redessociales {
-    -webkit-transition: none;
-    transition: none;
-  }
-  .botones-redessociales:hover {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  .submit-reset-button .submit,
-  .submit-reset-button .reset {
-    -webkit-transition: none;
-    transition: none;
-  }
-  .submit-reset-button .submit:hover {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  .submit-reset-button .reset:hover {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-}
-
 @media (min-width: 992px) {
   a:visited {
     color: purple;

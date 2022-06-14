@@ -2,11 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Fredoka+One&family=Mako&family=Orelega+One&display=swap');
 
 *{
-    padding: 0;
+    padding: 0%;
     margin: 0%;
 }
 
 
+/*nesting*/
 header{
     background-color: $header_color;
     font-family: $fuente;
@@ -49,6 +50,8 @@ header{
     a{
         text-decoration: none;
         padding: 10px;
+        color: whitesmoke;
+        font-weight: normal;
     }
 
 }
@@ -61,6 +64,10 @@ main{
     background-color: $color_main;
 }
 
+
+
+
+/*seccion inicio*/
 .comentarios .titulo{
     font-size: $tamano_titulo_seccion;
     text-align: center !important;
@@ -71,6 +78,7 @@ main{
     font-weight: bold;
 }
 
+/*carrosel*/
 .carousel-inner img{
     max-width: 50%;
     margin: auto;
@@ -79,15 +87,16 @@ main{
 
 
 
-
+/*seccion sobre mi*/
 .sobre-mi-main{
     display: grid;
     grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas: 
     "sobreMi sobreMi sobreMi sobreMi"
     "foto foto foto foto"
-    "edson edson edson edson";
+    "edson edson edson edson"
+    "publicaciones publicaciones publicaciones publicaciones";
     font-family: $fuente;
     justify-items: center;
     align-items: center;
@@ -114,8 +123,6 @@ main{
     }
 }
 
-
-
 .edson{
     grid-area: edson;
     text-align: center;
@@ -123,11 +130,27 @@ main{
     color: $color_titulo_seccion;
 }
 
+.publicaciones{
+    grid-area: publicaciones;
+    justify-content: space-evenly;
+    font-family: $fuente;
+}
+
+.publicaciones a{
+    grid-area: publicaciones;
+    height: 60px;
+    width: 60px;
+    background-color: whitesmoke;
+    color: $color_titulo_seccion;
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+}
 
 
 
 
 
+/*seccion metodologia*/
 .metodologia{
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -160,7 +183,7 @@ main{
 
 
 
-
+/*seccion cursos*/
 .cursos-padre{
     display: grid;
     grid-template-columns: auto auto;
@@ -211,11 +234,19 @@ main{
 
 
 
-
-
-
+/*seccion agenda*/
+.agenda{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    "titulo titulo"
+    "invitacion invitacion"
+    "formulario formulario";
+}
 
 .agenda h3{
+    grid-area: titulo;
     color: $color_titulo_seccion;
     padding: 30px;
     font-family: $fuente;
@@ -224,8 +255,23 @@ main{
     font-weight: bold;
 }
 
+
+.invitacion-claseprueba{
+    grid-area: invitacion;
+    color: $color_titulo_seccion;
+    font-family: $fuente;
+    text-align: center;
+    padding: 10px 30px 30px 30px;
+}
+
+.invitacion-claseprueba p{
+    margin: auto;
+}
+
 /*nesting*/
+/*formulario para agendar clase de prueba*/
 .formulario{
+    grid-area: formulario;
     font-family: $fuente;
     color: black;
 
@@ -236,8 +282,6 @@ main{
         padding-left: 30px;
     }
 }
-
-
 
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
     width: 100%;
@@ -327,7 +371,7 @@ label {
 
 
 
-
+/*seccion footer*/
 /*nesting*/
 footer{
     background-color: #f1cf7c;
@@ -422,33 +466,7 @@ footer{
 
 
 /*media querie*/
-@media (max-width:576px){
-    .botones-redessociales{
-    transition: none;
 
-    &:hover{
-        transform: scale(0);
-    }
-}
-
-.botones-redessociales:hover{
-    
-}
-
-.submit-reset-button .submit,
-.submit-reset-button .reset{
-    transition: none;
-}
-
-.submit-reset-button .submit:hover{
-    transform: scale(0);
-}
-
-.submit-reset-button .reset:hover{
-    transform: scale(0)
-}
-
-}
 
 
 @media (min-width: 992px){
