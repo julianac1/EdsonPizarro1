@@ -135,20 +135,23 @@ main{
     font-family: $fuente;
 
     a{
-    height: 60px;
-    width: 60px;
+    height: auto;
+    width: 300px;
     background-color: whitesmoke;
     color: $color_titulo_seccion;
     text-decoration: none;
-    padding: 10px 10px 10px 10px;
     border: 1px solid whitesmoke;
-    border-radius: 30px;
-    margin: 10px 10px 10px 10px;
-    align-items: center;
-    justify-content: space-around;
-    justify-self: center;
+    border-radius: 50px;
+    margin: 10px 05px 10px 05px;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    display: inline-block;
     }
 }
+
+.publicaciones a:first-child(
+    
+)
 
 
 
@@ -513,8 +516,12 @@ footer{
     }
 }
 
-@media screen and {min-width: 1090px;
-    
+@media (max-width: 1233px) {
+    .publicaciones a{
+        display: block;
+    }
 }
+
+
 
 

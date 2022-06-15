@@ -144,26 +144,20 @@ main {
 }
 
 .publicaciones a {
-  height: 60px;
-  width: 60px;
+  height: auto;
+  width: 300px;
   background-color: whitesmoke;
   color: black;
   text-decoration: none;
-  padding: 10px 10px 10px 10px;
   border: 1px solid whitesmoke;
-  border-radius: 30px;
-  margin: 10px 10px 10px 10px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  border-radius: 50px;
+  margin: 10px 05px 10px 05px;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  display: inline-block;
 }
 
-/*seccion metodologia*/
-.metodologia {
+.publicaciones a:first-child .metodologia {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto auto auto auto;
@@ -541,6 +535,12 @@ footer h5 {
   .botones-redessociales .instagram:hover {
     -webkit-transform: none;
             transform: none;
+  }
+}
+
+@media (max-width: 1233px) {
+  .publicaciones a {
+    display: block;
   }
 }
 /*# sourceMappingURL=style.css.map */
