@@ -157,7 +157,8 @@ main {
   display: inline-block;
 }
 
-.publicaciones a:first-child .metodologia {
+/*seccion metodologia*/
+.metodologia {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto auto auto auto;
